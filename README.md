@@ -1,0 +1,2 @@
+This will be a mock-up of the google results page using html and css. It will demonstrate knowledge of html, css, and css grid. 
+From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
