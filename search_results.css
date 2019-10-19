@@ -1,0 +1,168 @@
+/* search_results.css*/
+
+.container {
+    display: grid;
+    grid-template-columns: .35fr 4fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header header header"
+    ". results ."
+    "footer footer footer";
+    border: solid 1px black;
+}
+
+.header {
+    grid-area: header;
+    border-color: black;
+    display: grid;
+    grid-template-columns: auto 4fr 1fr auto;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "logo search search links"
+    ". search-type options .";
+    border: solid 1px black;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: pink;
+}
+
+.search {
+    grid-area: search;
+    background-color: turquoise;
+}
+
+.links {
+    grid-area: links;
+    background-color: magenta;
+}
+
+.search-type {
+    grid-area: search-type;
+    background-color: grey;
+}
+
+.options {
+    grid-area: options;
+    background-color: seagreen;
+}
+
+.results {
+    grid-area: results;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas:
+    "num-of-results"
+    "page1"
+    "people-ask"
+    "page2"
+    "page3"
+    "videos"
+    "page4"
+    "page5"
+    "page6"
+    "page7"
+    "page8"
+    "page9"
+    "related-ads"
+    "related-links"
+    "next-pages";              
+}
+
+.num-of-results {
+    grid-area: num-of-results;
+    border: solid 1px black;
+}
+
+.page1 {
+    grid-area: page1;
+    border: solid 1px black;
+}
+
+.page2 {
+    grid-area: page2;
+    border: solid 1px black;
+}
+
+.page3 {
+    grid-area: page3;
+    border: solid 1px black;
+}
+
+.people-ask {
+    grid-area: people-ask;
+    border: solid 1px black;
+}
+
+.videos {
+    grid-area: videos;
+    border: solid 1px black;
+}
+
+.page4 {
+    grid-area: page4;
+    border: solid 1px black;
+}
+
+.page5 {
+    grid-area: page5;
+    border: solid 1px black;
+}
+
+.page6 {
+    grid-area: page6;
+    border: solid 1px black;
+}
+
+.page7 {
+    grid-area: page7;
+    border: solid 1px black;
+}
+
+.page8 {
+    grid-area: page8;
+    border: solid 1px black;
+}
+
+.page9 {
+    grid-area: page9;
+    border: solid 1px black;
+}
+
+.related-ads {
+    grid-area: related-ads;
+    border: solid 1px black;
+}
+
+.related-links {
+    grid-area: related-links;
+    border: solid 1px black;
+}
+
+.next-pages {
+    grid-area: next-pages;
+    border: solid 1px black;
+}
+
+.footer {
+    grid-area: footer;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: .15fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". location location ."
+    ". tools . .";
+}
+
+.location {
+    grid-area: location;
+    border: solid 1px black;
+}
+
+.tools {
+    grid-area: tools;
+    border: solid 1px black;
+}
