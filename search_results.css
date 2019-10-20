@@ -1,4 +1,13 @@
 /* search_results.css*/
+* {
+    margin: 0px;
+    passing: 0px;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
 
 .container {
     display: grid;
@@ -15,22 +24,103 @@
     grid-area: header;
     border-color: black;
     display: grid;
-    grid-template-columns: auto 4fr 1fr auto;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
     grid-template-rows: 5fr 4fr;
     grid-template-areas:
-    "logo search search links"
+    "logo search-bar search-bar links"
     ". search-type options .";
     border: solid 1px black;
 }
 
 .logo {
     grid-area: logo;
-    background-color: pink;
+    max-width: 100px;
+}
+
+.logo img {
+    width: 90%;
+    height: auto;
+    padding-top: 23px;
+    padding-left: 21px;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    grid-template-areas:
+    "search mic mag-glass";
+    justify-self: left;
+    align-self: middle;
+    width: 550px;
+    background: #FFF;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin-top: 15px;
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.mag-glass {
+    grid-area: mag-glass;
+    justify-self: center;
+    align-self: middle;
+}
+
+.magnify {
+    width: 16px;
+    height: auto;
+    padding-top: 13px;
+    padding-right: 5px;
 }
 
 .search {
     grid-area: search;
-    background-color: turquoise;
+    justify-self: left;
+    padding-left: 35px;
+}
+
+.bar {
+    margin-top:3px;
+    justify-self: center;
+    height: 80%;
+    width: 95%;
+    border: none;
+    font-size: 30px;
+    font-family: arial;
+    line-height: 34px;
+}
+
+.bar:focus{
+    outline:none;
+}
+
+.mic {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-items: right;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 20px;
+    line-height: 44px;
+}
+
+.mic-image {
+    height: 20px;
+    width: 20px;
+    background-size: 24px;
+    vertical-align: middle;
+    padding-left: 33%;
 }
 
 .links {
